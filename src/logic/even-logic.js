@@ -1,17 +1,16 @@
-// parity check
-const isEven = (num) => num % 2 === 0;
+const isEven = (number) => number % 2 === 0;
 
-export default (userName, readlineSync) => {
+const playBrainEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let correctAnswersCount = 0;
+  const roundsToWin = 3;
 
-  while (correctAnswersCount < 3) {
+  while (correctAnswersCount < roundsToWin) {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
-
     console.log(`Question: ${randomNumber}`);
-    const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
 
+    const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
     const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
 
     if (userAnswer === correctAnswer) {
@@ -19,10 +18,10 @@ export default (userName, readlineSync) => {
       correctAnswersCount += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${userName}!`);
+      console.log('Let\'s try again.');
       return;
     }
   }
 
-  console.log(`Congratulations, ${userName}!`);
+  console.log('Congratulations!');
 };
