@@ -1,6 +1,6 @@
 // src/logic/calc-logic.js
-
 const generateRandomNumber = () => Math.floor(Math.random() * 100);
+
 const generateRandomOperator = () => {
   const operators = ['+', '-', '*'];
   const randomIndex = Math.floor(Math.random() * operators.length);
@@ -20,7 +20,7 @@ const calculateExpression = (num1, operator, num2) => {
   }
 };
 
-const getRoundData = () => {
+const generateRoundData = () => {
   const num1 = generateRandomNumber();
   const num2 = generateRandomNumber();
   const operator = generateRandomOperator();
@@ -29,4 +29,12 @@ const getRoundData = () => {
   return { question, correctAnswer };
 };
 
-export { generateRandomNumber, generateRandomOperator, calculateExpression, getRoundData };
+
+
+
+export {
+  generateRandomNumber, generateRandomOperator, calculateExpression, generateRoundData,
+};
+
+
+

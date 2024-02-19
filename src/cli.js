@@ -6,9 +6,6 @@ const getUserName = () => {
   return userName;
 };
 
-const getUserAnswer = () => {
-  const userAnswer = readlineSync.question('Your answer: ');
-  return userAnswer;
-};
+const getUserAnswer = (question) => readlineSync.question(`${question}\nYour answer: `);
 
 export { getUserName, getUserAnswer };

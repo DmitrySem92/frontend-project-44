@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import greetUser from '../src/cli.js';
+
+// bin/brain-calc.js
 import playBrainCalc from '../src/games/brainCalc.js';
 
-greetUser();
 playBrainCalc();

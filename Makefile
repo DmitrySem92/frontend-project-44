@@ -16,3 +16,6 @@ lint:
 brain-calc:
 	node src/index.js brainCalc
 
+brain-gcd:
+	./bin/brain-gcd.js
+
