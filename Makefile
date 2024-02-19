@@ -14,5 +14,5 @@ lint:
 	npx eslint .
 
 brain-calc:
-	node bin/brain-calc.js
+	node src/index.js brainCalc
 
