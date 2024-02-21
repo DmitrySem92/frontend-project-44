@@ -19,3 +19,6 @@ brain-calc:
 brain-gcd:
 	./bin/brain-gcd.js
 
+brain-progression:
+	./bin/brain-progression.js
+

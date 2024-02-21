@@ -29,12 +29,6 @@ const generateRoundData = () => {
   return { question, correctAnswer };
 };
 
-
-
-
 export {
   generateRandomNumber, generateRandomOperator, calculateExpression, generateRoundData,
 };
-
-
-

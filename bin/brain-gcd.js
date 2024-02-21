@@ -3,4 +3,3 @@
 import playBrainGCD from '../src/games/brainGcd.js';
 
 playBrainGCD();
-
