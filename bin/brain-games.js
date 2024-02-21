@@ -1,5 +1,2 @@
-#!/usr/bin/env node
-
-import greetUser from '../src/cli.js';
-
-greetUser();
+// bin/brain-games.js
+import { greetUser } from '../src/cli.js';
