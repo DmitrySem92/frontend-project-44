@@ -1,2 +1,4 @@
 // bin/brain-games.js
-import { greetUser } from '../src/cli.js';
+import * as cli from '../src/cli.js';
+
+cli.greetUser();
