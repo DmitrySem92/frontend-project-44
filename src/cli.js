@@ -12,4 +12,4 @@ const greetUser = () => {
   console.log('Hello!');
 };
 
-export { getUserName, getUserAnswer, greetUser };
+export default { getUserName, getUserAnswer, greetUser };
