@@ -9,7 +9,9 @@ const getUserName = () => {
 const getUserAnswer = (question) => readlineSync.question(`${question}\nYour answer: `);
 
 const greetUser = () => {
-  console.log('Hello!');
+  console.log('Welcome to the Brain Games!');
+const userName = getUserName();
+console.log(`Hello, ${userName}!`)
 };
 
 export default { getUserName, getUserAnswer, greetUser };
